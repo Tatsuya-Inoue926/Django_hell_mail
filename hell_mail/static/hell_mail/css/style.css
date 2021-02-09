@@ -1,0 +1,36 @@
+.font-small{
+    color: white;
+    font-size: 22px;
+    font-family: 'Sawarabi Mincho', sans-serif;
+    margin-top: 25px;
+}
+
+.font-large{
+    color: red;
+    font-size: 50px;
+    font-family: 'Sawarabi Mincho', sans-serif;
+    margin-top: 100px;
+}
+.container{
+    background-color: black;
+}
+
+.up-form{
+    color:red;
+}
+
+.btn{
+    color: red;
+}
+
+.word{
+    font-family: 'Sawarabi Mincho', sans-serif;
+    font-size: 30px;
+    margin-top: 200px;
+}
+
+.send{
+    font-family: 'Sawarabi Mincho', sans-serif;
+    font-size: 20px;
+    margin-top: 10px;
+}

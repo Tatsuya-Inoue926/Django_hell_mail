@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" type = "text/css" href="{% static 'hell_mail/css/style.css' %}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap" rel="stylesheet">
+</head>
+<body class="container text-white">
+    {% block body_block %}
+    <center>
+        <h1 class="font-large">地獄通信</h1>
+        <h2 class="font-small">あなたの怨み、晴らします。</h1><hr>
+        <br>
+    <div class="form-row mx-auto" style="width: 200px;">
+        <form action="{% url 'hell_mail:index' %}" method = "post">
+            {% csrf_token %}
+            {{form.as_p}}
+            <input type="submit" class="btn btn-dark my-0 text-white" value="送信">
+        </form>
+    </div>
+    </center>
+    {% endblock %}
+</body>
+</html>
